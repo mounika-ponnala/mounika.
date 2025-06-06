@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Align Property Demo</title>
+  <style>
+    /* 1. Text Alignment */
+    .text-align {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center; 
+    }
+
+    /* 2. Center Block Element Horizontally */
+    .center-block {
+      width: 300px;
+      margin: 20px auto;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    /* 3. Flexbox Alignment */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;     
+      height: 200px;
+      background-color: lightgreen;
+      margin-bottom: 20px;
+    
+    }
+    /* 4. Grid Alignment */
+    .grid-container {
+      display: grid;
+      place-items: center; /* both align-items and justify-items */
+      height: 200px;
+      background-color: lightcoral;
+    }
+
+    .grid-item {
+      background-color: crimson;
+      color: white;
+      padding: 20px;
+    }
+
+    /* 5. Inline Vertical Alignment */
+    .inline-demo {
+      margin-top: 20px;
+      font-size: 0;
+    }
+
+    .inline-box {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      vertical-align: middle;
+      line-height: 100px;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Text Align</h2>
+  <div class="text-align">This text is centered using <code>text-align: center</code>.</div>
+
+  <h2>2. Center Block Horizontally</h2>
+  <div class="center-block">This block is horizontally centered using <code>margin: auto</code>.</div>
+
+  <h2>3. Flexbox Alignment</h2>
+  <div class="flex-container">
+    <div class="flex-item">Flex Centered</div>
+  </div>
+
+  <h2>4. Grid Alignment</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid Centered</div>
+  </div>
+
+  <h2>5. Inline Vertical Align</h2>
+  <div class="inline-demo">
+    <div class="inline-box">A</div>
+    <div class="inline-box" style="height: 50px;">B</div>
+    <div class="inline-box">C</div>
+  </div>
+
+</body>
+</html>

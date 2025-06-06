@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border:2px solid black;
+}
+
+li a {
+  display: block;
+  color:greenyellow;
+  background-color: rgb(137, 127, 133);
+  text-decoration: none;
+    border:2px solid black;
+    text-align: center;
+      padding: 0px;
+
+
+}
+
+
+li a:hover {
+  background-color: gray;
+  color: white;
+}
+
+li a.active {
+  background-color:blue;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color:yellow;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="https://web.whatsapp.com/">About</a></li>
+</ul>
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+

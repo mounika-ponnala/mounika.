@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                counter-reset: x;
+                background-color: blanchedalmond;
+                background-image:url("https://www.eatthis.com/wp-content/uploads/sites/4/2024/03/Fast-Food-Drinks-Main.jpg?quality=82&strip=all opacity:o.3 no-repeat width:100% fixed");
+                
+            h2{
+                counter-reset: y;
+            }
+            h2::before{
+                counter-increment: x;
+                content: "section" counter(x) ":" ;
+            }
+            h3::before{
+                counter-increment: y;
+                content:counter(x) "." counter(y) " ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FAST FOODS AND BEVERAGES</h1>
+        <h2>Food</h2>
+        <h3>pizza</h3>
+        <h3>burger</h3>
+        <h3>hotdog</h3>
+
+        <h2>Drinks</h2>
+        <h3>pepsi</h3>
+            <h3>cococola</h3>
+            <h3>sprite</h3>
+    </body>
+</html>

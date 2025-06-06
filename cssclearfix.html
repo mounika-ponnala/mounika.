@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {  
+  font-family: Arial, sans-serif;  
+  
+}  
+  
+header, nav, main, aside, footer {  
+  padding: 10px;  
+  margin: 10px;  
+  border: 1px solid #ccc;  
+}  
+  
+nav ul {  
+  list-style:circle;  
+  padding: 0;  
+  margin: 0;  
+}  
+  
+nav li {  
+  display: inline;  
+  margin-right: 10px;  
+}  
+  
+.container::after {  
+  content: "";  
+  display: table;  
+  clear: both;  
+}  
+  
+main {  
+  float: left;  
+  width: 70%;  
+  box-sizing: border-box;  
+}  
+  
+aside {  
+  float: right;  
+  width: 28%;  
+  box-sizing: border-box;  
+}  
+  
+footer {  
+  clear: both;  
+  text-align: center;  
+}  
+        </style>
+    </head>
+    <body>
+        <body>  
+  <header>  
+    <h1>Header</h1>  
+  </header>  
+    
+  <nav>  
+    <ul>  
+      <li><a href="#">Home</a></li>  
+      <li><a href="#">About</a></li>  
+      <li><a href="#">Services</a></li>  
+      <li><a href="#">Contact</a></li>  
+    </ul>  
+  </nav>  
+    
+  <div class="container clearfix">  
+    <main>  
+      <h2>Main Content</h2>  
+      <p>This is the main content area.</p>  
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris vel aliquet luctus, felis elit varius orci, vitae hendrerit dui velit vel velit. Nulla facilisi. Praesent quis sem sed nisi ullamcorper consectetur. Ut volutpat tincidunt nisl, et rhoncus arcu finibus in.</p>  
+    </main>  
+      
+    <aside>  
+      <h2>Sidebar</h2>  
+      <p>This is the sidebar.</p>  
+    </aside>  
+  </div>  
+    
+  <footer>  
+    <p>© 2023 Example Company. All rights reserved.</p>  
+  </footer>  
+</body>  
+</html>  

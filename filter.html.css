@@ -1,0 +1,20 @@
+<!DOCTYPE html>   
+<html>   
+        
+<head>   
+    <title>CSS filter property</title>   
+    <style>   
+    body{  
+    text-align:center;  
+    }  
+        #img1 {   
+            filter: brightness(130%);   
+        }   
+    </style>   
+</head>   
+<body>   
+        <img src =  "tiger.png" > <h2>Original Image    </h2>  
+        <img src =  "tiger.png" id = "img1"> <h2>brightness(130%)</h2>      
+</body>   
+    
+</html>  

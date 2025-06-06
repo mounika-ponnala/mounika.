@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+<h4>Beautiful view</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGGexTOukphmf8PDDsMcUBHaeoojV2lJ34dg&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGGexTOukphmf8PDDsMcUBHaeoojV2lJ34dg&s" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">nature</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiPiGFkG5AnbA6uguUSPJNdr_acJ3-nsPoYYG9ssZ_P1XX0FaYnvV5Pr8HnjUZ2-UBBJQ&usqp=CAU">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiPiGFkG5AnbA6uguUSPJNdr_acJ3-nsPoYYG9ssZ_P1XX0FaYnvV5Pr8HnjUZ2-UBBJQ&usqp=CAU" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">nature</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://c4.wallpaperflare.com/wallpaper/758/323/699/nature-scenery-beautiful-mountain-wallpaper-wallpaper-thumb.jpg">
+      <img src="https://c4.wallpaperflare.com/wallpaper/758/323/699/nature-scenery-beautiful-mountain-wallpaper-wallpaper-thumb.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">nature</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://previews.123rf.com/images/ewastudio/ewastudio1609/ewastudio160900060/64923728-beauty-nature-scenery-landscape-background-nature-composition-beautiful-landscape.jpg">
+      <img src="https://previews.123rf.com/images/ewastudio/ewastudio1609/ewastudio160900060/64923728-beauty-nature-scenery-landscape-background-nature-composition-beautiful-landscape.jpg" alt="Mountains" width="600" height="100">
+    </a>
+    <div class="desc">nature</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>Nature can refer to the general realm of living beings, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth.
+</p>
+  <p>The nature is very attractive and full of my favorite green color. It provides us the air to breathe, the water to drink, the soil to make a home, and the land to stay. Nature gives us fruits, vegetables, and grains to eat. We should enjoy nature without disturbing its balance</p>
+</div>
+
+</body>
+</html>
+
+

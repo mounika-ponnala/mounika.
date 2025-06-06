@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+    body{
+        background-color: cornflowerblue;
+    }
+ol {  
+    counter-reset: section;  
+    list-style-type: none;  
+    background-color: rgb(255, 196, 252);
+    color: rgb(165, 119, 17);
+}  
+  
+li::before {  
+    background-color: cadetblue;
+    counter-increment: section;  
+    content: counters(section,".") " ";  
+}  
+</style>  
+</head>  
+<body>  
+<h2 style="color:blue">list of grocery items to buy in supermarket</h2>  
+<ol>  sweet items 
+  <li>jaggery</li>  
+  <li> sugar</li>
+    <ol>  
+      <li>choco powder</li>  
+      <li>butter</li>  
+      <li>ghee  
+        <ol>  
+          <li>jam</li>  
+          <li>honey</li>  
+          <li>glucose</li>  
+        </ol>  
+      </li>  
+      <li>choclates</li>  
+    </ol>  
+  </li>  
+  <li>cakes</li>  
+  <li>bakery</li>  
+</ol>  
+<p><b>Note:</b> these are the ingredients to make delicious items .</p>  
+</body>  
+</html>  
+ 

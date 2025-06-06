@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Combinators Example</title>
+  <style>
+    .parent p {
+      color: red;
+    }
+    .parent > p {
+      font-weight: bold;
+    }
+    h2 + p {
+      background-color: yellow;
+    }
+    h3 ~ p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quaerat nam dolorum debitis minima autem delectus, libero, tempora ipsum quas cupiditate iure reiciendis quisquam non distinctio obcaecati harum suscipit pariatur. (red and bold)</p>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic possimus at ratione pariatur rerum, aliquam et ab, cumque vero necessitatibus doloremque quae soluta obcaecati aliquid ullam perspiciatis numquam vitae adipisci. (red only)</p>
+    </div>
+  </div>
+
+  <h2>Heading 2</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, non provident nam, saepe numquam iste ipsam iusto delectus adipisci aperiam amet rerum repudiandae, iure natus. Placeat modi doloribus officiis.(yellow background)</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit assumenda in neque dicta recusandae ad. Exercitationem consequatur, nostrum debitis numquam temporibus dolorem enim similique! Nemo et numquam obcaecati soluta.+ (not yellow)</p>
+
+  <h3>Heading 3</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, modi sed? Delectus provident facere veritatis recusandae vitae soluta maiores quod, tenetur omnis voluptatibus molestiae ex molestias aut quidem perferendis expedita. (blue text)</p>
+  <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nihil obcaecati laboriosam aspernatur iste, amet saepe molestias a deleniti accusamus delectus quia eius, aliquid sit dicta quis reiciendis harum debitis?</p></div>
+
+</body>
+</html>
